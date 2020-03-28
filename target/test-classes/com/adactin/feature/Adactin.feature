@@ -1,4 +1,4 @@
-Feature: Testing login functionality on adactin application
+ Feature: Testing login functionality on adactin application
 
 
 @RegressionTest
@@ -9,6 +9,7 @@ And user enters the valid password "Tanu@1618" in the password field
 And user clicks on the login button
 Then user is logged in
 
+@SmokeTest
 Scenario: User Checking the Search hotel functionality
 Given user is logged in and is in search hotelpage
 When user select the location in the location field
@@ -20,6 +21,7 @@ And user selects the number of children per room in the children per room field
 And user clicks on the search button
 Then user confirms the search hotel page
 
+@SanityTest
 Scenario: User checking the Select Hotel functionality
 Given user navigates to the select hotel page
 When user clicks on the select hotel radio button
