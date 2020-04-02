@@ -5,13 +5,14 @@ import org.openqa.selenium.WebDriver;
 import com.adactin.baseclass.BaseClass;
 import com.adactin.helper.FileReaderManager;
 import com.adactin.helper.PageObjectManager;
+import com.adactin.runner.ReRunner;
 import com.adactin.runner.Runner;
 
 import cucumber.api.java.en.*;
 
 public class StepDefinition extends BaseClass{
 	
-	public static WebDriver driver = Runner.driver;
+	public static WebDriver driver = ReRunner.driver;
 	 
 	  PageObjectManager p1 = new PageObjectManager(driver);
 	  
