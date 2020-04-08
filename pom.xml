@@ -19,15 +19,13 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.2</version>
-			<scope>test</scope>
+			<version>4.12</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
 		<dependency>
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-junit</artifactId>
 			<version>1.2.5</version>
-			<scope>test</scope>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
 		<dependency>
@@ -88,7 +86,7 @@
 				<version>2.22.2</version>
 				<configuration>
 					<includes>
-						<include>**/ReRunner.java</include>
+						<include>**/Runner.java</include>
 					</includes>
 				</configuration>
 			</plugin>

@@ -9,10 +9,11 @@ import com.adactin.runner.ReRunner;
 import com.adactin.runner.Runner;
 
 import cucumber.api.java.en.*;
+import junit.framework.Assert;
 
 public class StepDefinition extends BaseClass{
 	
-	public static WebDriver driver = ReRunner.driver;
+	public static WebDriver driver = Runner.driver;
 	 
 	  PageObjectManager p1 = new PageObjectManager(driver);
 	  
@@ -161,6 +162,9 @@ public class StepDefinition extends BaseClass{
 	@Then("^user confirms the Book hotel page$")
 	public void user_confirms_the_Book_hotel_page() throws Throwable {
 		p1.getBh().getBook().click();
+		Assert.assertEquals("", " ");
+		
+		
 	}
 
 
